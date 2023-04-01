@@ -1,0 +1,44 @@
+curl -X GET 
+  http://127.0.0.1:8000/items/ 
+  -H accept: application/json
+
+
+curl -X POST 
+  http://127.0.0.1:8000/items/ 
+  -H accept: application/json 
+  -H Content-Type: application/json 
+  -d {
+  "id": 0,
+  "name": "string",
+  "price": 0,
+  "is_offer": true }
+
+
+curl -X PUT 
+  http://127.0.0.1:8000/items/ 
+  -H accept: application/json 
+  -H Content-Type: application/json 
+  -d {
+  "id": 2,
+  "name": "string",
+  "price": 10,
+  "is_offer": true}
+
+
+
+
+//GET http://127.0.0.1:61998/items HTTP/1.1
+//content-Type: application/json
+
+//{
+//"id": 1,
+//"name": "Item 1",
+//"price": 10.0,
+//"is_offer": true
+
+//}
+
+
+//POST http://127.0.0.1:8000/items HTTP/1.1
+//content-type: application/json
+
